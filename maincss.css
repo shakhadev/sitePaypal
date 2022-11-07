@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.pA {
+  padding: 200px 0;
+}
+
+header {
+  background-image: url(./img/img/bg.jpg);
+  background-position: center;
+  color: white;
+}
+header .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.501);
+}
+header .logo {
+  display: flex;
+}
+header .logo h2 {
+  padding-left: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+header .logo h1 {
+  font-size: 40px;
+  text-shadow: 16px 8px 6px;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1140px) {
+  header nav {
+    width: 100%;
+  }
+}
+header nav .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1140px) {
+  header nav .menu {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    left: 0;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    position: fixed;
+    align-items: center;
+    transition: 0.5s;
+  }
+}
+header nav .menu .btn {
+  background-color: transparent;
+  color: white;
+}
+header ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 1140px) {
+  header ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+header ul li {
+  list-style: none;
+}
+@media screen and (max-width: 1140px) {
+  header ul li {
+    padding: 20px;
+  }
+}
+header label {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  header label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  header label span {
+    width: 30px;
+    height: 4px;
+    background-color: blue;
+    z-index: 100;
+    margin: 3px 0;
+  }
+}
+header input {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  header input:checked ~ .menu {
+    top: 0;
+  }
+}
+
+.sct2 {
+  background-image: linear-gradient(to right, rgb(54, 54, 154), rgb(54, 54, 154), rgb(171, 165, 165), rgb(54, 54, 154), rgb(54, 54, 154));
+}
+
+.sct3 .ajoyib3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=maincss.css.map */
